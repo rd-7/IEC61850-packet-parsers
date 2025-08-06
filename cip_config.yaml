@@ -1,0 +1,162 @@
+cip:
+    enabled: true
+    rules:
+      "0x01": { id: "CIP-GET-ATTRIBUTES-ALL-001", event: "Get Attributes All", category: "read", severity: "low" }
+      "0x02": { id: "CIP-SET-ATTRIBUTES-ALL-002", event: "Set Attributes All", category: "write", severity: "high" }
+      "0x03": { id: "CIP-GET-ATTRIBUTE-LIST-003", event: "Get Attribute List", category: "read", severity: "low" }
+      "0x04": { id: "CIP-SET-ATTRIBUTE-LIST-004", event: "Set Attribute List", category: "write", severity: "high" }
+      "0x05": { id: "CIP-RESET-005", event: "Reset", category: "control", severity: "critical" }
+      "0x06": { id: "CIP-START-006", event: "Start", category: "control", severity: "medium" }
+      "0x07": { id: "CIP-STOP-007", event: "Stop", category: "control", severity: "medium" }
+      "0x08": { id: "CIP-CREATE-008", event: "Create", category: "configuration", severity: "high" }
+      "0x09": { id: "CIP-DELETE-009", event: "Delete", category: "configuration", severity: "high" }
+      "0x0A": { id: "CIP-MULTIPLE-SERVICE-REQUEST-010", event: "Multiple Service Request", category: "multiple", severity: "medium" }
+      "0x0D": { id: "CIP-APPLY-ATTRIBUTES-013", event: "Apply Attributes", category: "configuration", severity: "medium" }
+      "0x0E": { id: "CIP-GET-ATTRIBUTE-SINGLE-014", event: "Get Attribute Single", category: "read", severity: "low" }
+      "0x10": { id: "CIP-SET-ATTRIBUTE-SINGLE-016", event: "Set Attribute Single", category: "write", severity: "medium" }
+      "0x11": { id: "CIP-FIND-NEXT-OBJECT-INSTANCE-017", event: "Find Next Object Instance", category: "discovery", severity: "low" }
+      "0x14": { id: "CIP-ERROR-RESPONSE-020", event: "Error Response", category: "error", severity: "medium" }
+      "0x15": { id: "CIP-RESTORE-021", event: "Restore", category: "configuration", severity: "high" }
+      "0x16": { id: "CIP-SAVE-022", event: "Save", category: "configuration", severity: "medium" }
+      "0x17": { id: "CIP-NOP-023", event: "No Operation", category: "control", severity: "low" }
+      "0x18": { id: "CIP-GET-MEMBER-024", event: "Get Member", category: "read", severity: "low" }
+      "0x19": { id: "CIP-SET-MEMBER-025", event: "Set Member", category: "write", severity: "medium" }
+      "0x1A": { id: "CIP-INSERT-MEMBER-026", event: "Insert Member", category: "write", severity: "medium" }
+      "0x1B": { id: "CIP-REMOVE-MEMBER-027", event: "Remove Member", category: "write", severity: "medium" }
+      "0x1C": { id: "CIP-GROUP-SYNC-028", event: "Group Sync", category: "synchronization", severity: "medium" }
+      "0x4B": { id: "CIP-INITIATE-UPLOAD-075", event: "Initiate Upload", category: "file_transfer", severity: "medium" }
+      "0x4C": { id: "CIP-READ-TAG-076", event: "Read Tag", category: "read", severity: "low" }
+      "0x4D": { id: "CIP-WRITE-TAG-077", event: "Write Tag", category: "write", severity: "medium" }
+      "0x4E": { id: "CIP-READ-MODIFY-WRITE-078", event: "Read Modify Write", category: "write", severity: "high" }
+      "0x4F": { id: "CIP-UPLOAD-TRANSFER-079", event: "Upload Transfer", category: "file_transfer", severity: "medium" }
+      "0x50": { id: "CIP-DOWNLOAD-TRANSFER-080", event: "Download Transfer", category: "file_transfer", severity: "medium" }
+      "0x51": { id: "CIP-CLEAR-FILE-081", event: "Clear File", category: "file_transfer", severity: "high" }
+      "0x52": { id: "CIP-READ-TAG-FRAGMENTED-082", event: "Read Tag Fragmented", category: "read", severity: "low" }
+      "0x53": { id: "CIP-WRITE-TAG-FRAGMENTED-083", event: "Write Tag Fragmented", category: "write", severity: "medium" }
+      "0x54": { id: "CIP-FORWARD-OPEN-084", event: "Forward Open", category: "connection", severity: "medium" }
+      "0x55": { id: "CIP-GET-INSTANCE-ATTRIBUTE-LIST-085", event: "Get Instance Attribute List", category: "read", severity: "low" }
+      "0x56": { id: "CIP-GET-CONNECTION-DATA-086", event: "Get Connection Data", category: "connection", severity: "low" }
+      "0x57": { id: "CIP-SEARCH-CONNECTION-DATA-087", event: "Search Connection Data", category: "connection", severity: "low" }
+      "0x5A": { id: "CIP-GET-CONNECTION-OWNER-090", event: "Get Connection Owner", category: "connection", severity: "low" }
+      "0x5B": { id: "CIP-LARGE-FORWARD-OPEN-091", event: "Large Forward Open", category: "connection", severity: "medium" }
+      "0x52": { id: "CIP-UNCONNECTED-SEND-082", event: "Unconnected Send", category: "messaging", severity: "medium" }
+      "0x4E": { id: "CIP-FORWARD-CLOSE-078", event: "Forward Close", category: "connection", severity: "medium" }
+
+    connection_management:
+      "0x54": { id: "CIP-FORWARD-OPEN-084", event: "Forward Open", category: "connection", severity: "medium" }
+      "0x4E": { id: "CIP-FORWARD-CLOSE-078", event: "Forward Close", category: "connection", severity: "medium" }
+      "0x5B": { id: "CIP-LARGE-FORWARD-OPEN-091", event: "Large Forward Open", category: "connection", severity: "medium" }
+      "0x52": { id: "CIP-UNCONNECTED-SEND-082", event: "Unconnected Send", category: "messaging", severity: "medium" }
+      "0x56": { id: "CIP-GET-CONNECTION-DATA-086", event: "Get Connection Data", category: "connection", severity: "low" }
+      "0x57": { id: "CIP-SEARCH-CONNECTION-DATA-087", event: "Search Connection Data", category: "connection", severity: "low" }
+      "0x5A": { id: "CIP-GET-CONNECTION-OWNER-090", event: "Get Connection Owner", category: "connection", severity: "low" }
+
+    file_operations:
+      "0x4B": { id: "CIP-INITIATE-UPLOAD-075", event: "Initiate Upload", category: "file_transfer", severity: "medium" }
+      "0x4C": { id: "CIP-INITIATE-DOWNLOAD-076", event: "Initiate Download", category: "file_transfer", severity: "medium" }
+      "0x4D": { id: "CIP-INITIATE-PARTIAL-READ-077", event: "Initiate Partial Read", category: "file_transfer", severity: "low" }
+      "0x4E": { id: "CIP-INITIATE-PARTIAL-WRITE-078", event: "Initiate Partial Write", category: "file_transfer", severity: "medium" }
+      "0x4F": { id: "CIP-UPLOAD-TRANSFER-079", event: "Upload Transfer", category: "file_transfer", severity: "medium" }
+      "0x50": { id: "CIP-DOWNLOAD-TRANSFER-080", event: "Download Transfer", category: "file_transfer", severity: "medium" }
+      "0x51": { id: "CIP-CLEAR-FILE-081", event: "Clear File", category: "file_transfer", severity: "high" }
+
+    vendor_specific:
+      "0x4C": { id: "CIP-READ-TAG-ROCKWELL-076", event: "Read Tag (Rockwell)", category: "read", severity: "low" }
+      "0x4D": { id: "CIP-WRITE-TAG-ROCKWELL-077", event: "Write Tag (Rockwell)", category: "write", severity: "medium" }
+      "0x4E": { id: "CIP-READ-MODIFY-WRITE-ROCKWELL-078", event: "Read Modify Write (Rockwell)", category: "write", severity: "high" }
+      "0x52": { id: "CIP-READ-TAG-FRAGMENTED-ROCKWELL-082", event: "Read Tag Fragmented (Rockwell)", category: "read", severity: "low" }
+      "0x53": { id: "CIP-WRITE-TAG-FRAGMENTED-ROCKWELL-083", event: "Write Tag Fragmented (Rockwell)", category: "write", severity: "medium" }
+      "0x55": { id: "CIP-GET-INSTANCE-ATTRIBUTE-LIST-ROCKWELL-085", event: "Get Instance Attribute List (Rockwell)", category: "read", severity: "low" }
+
+    safety_services:
+      "0x30": { id: "CIP-SAFETY-VALIDATE-048", event: "Safety Validate", category: "safety", severity: "critical" }
+      "0x31": { id: "CIP-SAFETY-RESET-049", event: "Safety Reset", category: "safety", severity: "critical" }
+      "0x32": { id: "CIP-SAFETY-SHUTDOWN-050", event: "Safety Shutdown", category: "safety", severity: "critical" }
+      "0x33": { id: "CIP-SAFETY-ENABLE-051", event: "Safety Enable", category: "safety", severity: "high" }
+      "0x34": { id: "CIP-SAFETY-DISABLE-052", event: "Safety Disable", category: "safety", severity: "high" }
+
+    motion_services:
+      "0x40": { id: "CIP-MOTION-ENABLE-064", event: "Motion Enable", category: "motion", severity: "high" }
+      "0x41": { id: "CIP-MOTION-DISABLE-065", event: "Motion Disable", category: "motion", severity: "high" }
+      "0x42": { id: "CIP-MOTION-HOME-066", event: "Motion Home", category: "motion", severity: "medium" }
+      "0x43": { id: "CIP-MOTION-JOG-067", event: "Motion Jog", category: "motion", severity: "medium" }
+      "0x44": { id: "CIP-MOTION-STOP-068", event: "Motion Stop", category: "motion", severity: "high" }
+      "0x45": { id: "CIP-MOTION-MOVE-ABSOLUTE-069", event: "Motion Move Absolute", category: "motion", severity: "medium" }
+      "0x46": { id: "CIP-MOTION-MOVE-RELATIVE-070", event: "Motion Move Relative", category: "motion", severity: "medium" }
+
+    sync_services:
+      "0x60": { id: "CIP-SYNC-GET-TIME-096", event: "Sync Get Time", category: "synchronization", severity: "low" }
+      "0x61": { id: "CIP-SYNC-SET-TIME-097", event: "Sync Set Time", category: "synchronization", severity: "medium" }
+      "0x62": { id: "CIP-SYNC-ENABLE-098", event: "Sync Enable", category: "synchronization", severity: "medium" }
+      "0x63": { id: "CIP-SYNC-DISABLE-099", event: "Sync Disable", category: "synchronization", severity: "medium" }
+
+    energy_services:
+      "0x70": { id: "CIP-ENERGY-GET-STATUS-112", event: "Energy Get Status", category: "energy", severity: "low" }
+      "0x71": { id: "CIP-ENERGY-SET-MODE-113", event: "Energy Set Mode", category: "energy", severity: "medium" }
+      "0x72": { id: "CIP-ENERGY-GET-CONSUMPTION-114", event: "Energy Get Consumption", category: "energy", severity: "low" }
+      "0x73": { id: "CIP-ENERGY-OPTIMIZE-115", event: "Energy Optimize", category: "energy", severity: "medium" }
+
+    exceptions:
+      "0x01": { id: "CIP-GENERAL-STATUS-001", event: "General Status Error", category: "error", severity: "medium" }
+      "0x02": { id: "CIP-EXTENDED-STATUS-002", event: "Extended Status Error", category: "error", severity: "medium" }
+      "0x03": { id: "CIP-OBJECT-DOES-NOT-EXIST-003", event: "Object Does Not Exist", category: "error", severity: "medium" }
+      "0x04": { id: "CIP-OBJECT-STATE-CONFLICT-004", event: "Object State Conflict", category: "error", severity: "high" }
+      "0x05": { id: "CIP-OBJECT-ALREADY-EXISTS-005", event: "Object Already Exists", category: "error", severity: "medium" }
+      "0x06": { id: "CIP-ATTRIBUTE-NOT-SETTABLE-006", event: "Attribute Not Settable", category: "error", severity: "medium" }
+      "0x07": { id: "CIP-PRIVILEGE-VIOLATION-007", event: "Privilege Violation", category: "security", severity: "high" }
+      "0x08": { id: "CIP-DEVICE-STATE-CONFLICT-008", event: "Device State Conflict", category: "error", severity: "high" }
+      "0x09": { id: "CIP-REPLY-DATA-TOO-LARGE-009", event: "Reply Data Too Large", category: "error", severity: "medium" }
+      "0x0A": { id: "CIP-FRAGMENTATION-PRIMITIVE-010", event: "Fragmentation of Primitive Value", category: "error", severity: "medium" }
+      "0x0B": { id: "CIP-NOT-ENOUGH-DATA-011", event: "Not Enough Data", category: "error", severity: "medium" }
+      "0x0C": { id: "CIP-ATTRIBUTE-NOT-SUPPORTED-012", event: "Attribute Not Supported", category: "error", severity: "medium" }
+      "0x0D": { id: "CIP-TOO-MUCH-DATA-013", event: "Too Much Data", category: "error", severity: "medium" }
+      "0x0E": { id: "CIP-OBJECT-DOES-NOT-EXIST-014", event: "Object Does Not Exist", category: "error", severity: "medium" }
+      "0x0F": { id: "CIP-SERVICE-FRAGMENTATION-015", event: "Service Fragmentation Sequence Not in Progress", category: "error", severity: "medium" }
+      "0x10": { id: "CIP-NO-STORED-ATTRIBUTE-DATA-016", event: "No Stored Attribute Data", category: "error", severity: "medium" }
+      "0x11": { id: "CIP-STORE-OPERATION-FAILURE-017", event: "Store Operation Failure", category: "error", severity: "high" }
+      "0x12": { id: "CIP-ROUTING-FAILURE-REQUEST-TOO-LARGE-018", event: "Routing Failure Request Packet Too Large", category: "error", severity: "medium" }
+      "0x13": { id: "CIP-ROUTING-FAILURE-RESPONSE-TOO-LARGE-019", event: "Routing Failure Response Packet Too Large", category: "error", severity: "medium" }
+      "0x14": { id: "CIP-MISSING-ATTRIBUTE-LIST-020", event: "Missing Attribute List Entry Data", category: "error", severity: "medium" }
+      "0x15": { id: "CIP-INVALID-ATTRIBUTE-VALUE-LIST-021", event: "Invalid Attribute Value List", category: "error", severity: "medium" }
+      "0x16": { id: "CIP-EMBEDDED-SERVICE-ERROR-022", event: "Embedded Service Error", category: "error", severity: "medium" }
+      "0x17": { id: "CIP-VENDOR-SPECIFIC-ERROR-023", event: "Vendor Specific Error", category: "error", severity: "medium" }
+      "0x18": { id: "CIP-INVALID-PARAMETER-024", event: "Invalid Parameter", category: "error", severity: "medium" }
+      "0x19": { id: "CIP-WRITE-ONCE-VALUE-025", event: "Write-Once Value or Medium Already Written", category: "error", severity: "medium" }
+      "0x1A": { id: "CIP-INVALID-REPLY-026", event: "Invalid Reply Received", category: "error", severity: "medium" }
+      "0x1B": { id: "CIP-BUFFER-OVERFLOW-027", event: "Buffer Overflow", category: "error", severity: "high" }
+      "0x1C": { id: "CIP-MESSAGE-FORMAT-ERROR-028", event: "Message Format Error", category: "error", severity: "medium" }
+      "0x1D": { id: "CIP-KEY-FAILURE-PATH-029", event: "Key Failure in Path", category: "security", severity: "high" }
+      "0x1E": { id: "CIP-PATH-SIZE-INVALID-030", event: "Path Size Invalid", category: "error", severity: "medium" }
+      "0x1F": { id: "CIP-UNEXPECTED-ATTRIBUTE-031", event: "Unexpected Attribute in List", category: "error", severity: "medium" }
+      "0x20": { id: "CIP-INVALID-MEMBER-ID-032", event: "Invalid Member ID", category: "error", severity: "medium" }
+      "0x21": { id: "CIP-MEMBER-NOT-SETTABLE-033", event: "Member Not Settable", category: "error", severity: "medium" }
+      "0x22": { id: "CIP-GROUP-2-ONLY-SERVER-034", event: "Group 2 Only Server General Failure", category: "error", severity: "high" }
+      "0x25": { id: "CIP-UNKNOWN-MODBUS-ERROR-037", event: "Unknown Modbus Error", category: "error", severity: "medium" }
+      "0x26": { id: "CIP-ATTRIBUTE-NOT-GETTABLE-038", event: "Attribute Not Gettable", category: "error", severity: "medium" }
+      "0xFF": { id: "CIP-GENERAL-ERROR-255", event: "General Error", category: "error", severity: "medium" }
+
+    class_objects:
+      "0x01": { id: "CIP-IDENTITY-OBJECT-001", event: "Identity Object", category: "object", severity: "low" }
+      "0x02": { id: "CIP-MESSAGE-ROUTER-002", event: "Message Router", category: "object", severity: "low" }
+      "0x03": { id: "CIP-DEVICENET-003", event: "DeviceNet Object", category: "object", severity: "low" }
+      "0x04": { id: "CIP-ASSEMBLY-004", event: "Assembly Object", category: "object", severity: "low" }
+      "0x05": { id: "CIP-CONNECTION-005", event: "Connection Object", category: "object", severity: "low" }
+      "0x06": { id: "CIP-CONNECTION-MANAGER-006", event: "Connection Manager", category: "object", severity: "medium" }
+      "0x0F": { id: "CIP-PARAMETER-015", event: "Parameter Object", category: "object", severity: "low" }
+      "0x43": { id: "CIP-TIME-SYNC-067", event: "Time Sync Object", category: "object", severity: "medium" }
+      "0x6B": { id: "CIP-SYMBOL-OBJECT-107", event: "Symbol Object", category: "object", severity: "low" }
+      "0x6C": { id: "CIP-TEMPLATE-OBJECT-108", event: "Template Object", category: "object", severity: "low" }
+      "0xF4": { id: "CIP-PORT-244", event: "Port Object", category: "object", severity: "low" }
+      "0xF5": { id: "CIP-TCP-IP-INTERFACE-245", event: "TCP/IP Interface Object", category: "object", severity: "medium" }
+      "0xF6": { id: "CIP-ETHERNET-LINK-246", event: "Ethernet Link Object", category: "object", severity: "medium" }
+
+    encapsulation_commands:
+      "0x0000": { id: "CIP-NOP-000", event: "No Operation", category: "encapsulation", severity: "low" }
+      "0x0001": { id: "CIP-LIST-TARGETS-001", event: "List Targets", category: "discovery", severity: "low" }
+      "0x0004": { id: "CIP-LIST-SERVICES-004", event: "List Services", category: "discovery", severity: "low" }
+      "0x0063": { id: "CIP-LIST-IDENTITY-099", event: "List Identity", category: "discovery", severity: "low" }
+      "0x0064": { id: "CIP-LIST-INTERFACES-100", event: "List Interfaces", category: "discovery", severity: "low" }
+      "0x0065": { id: "CIP-REGISTER-SESSION-101", event: "Register Session", category: "session", severity: "medium" }
+      "0x0066": { id: "CIP-UNREGISTER-SESSION-102", event: "Unregister Session", category: "session", severity: "medium" }
+      "0x006F": { id: "CIP-SEND-RR-DATA-111", event: "Send RR Data", category: "messaging", severity: "low" }
+      "0x0070": { id: "CIP-SEND-UNIT-DATA-112", event: "Send Unit Data", category: "messaging", severity: "low" }
